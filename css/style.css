@@ -578,10 +578,7 @@ a:hover {
   border-radius: 50px;
   margin-left: 10px;
 
-  transition: background-color var(--duration) var(--cubic);
-  transform: scale(1);
-  transition: background-color var(--duration) var(--cubic);
-  transform: var(--duration) var(--cubic);
+  transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic);
 }
 .footer-social-item:is(:hover, :focus) {
   background-color: rgba(33, 150, 243, 1.00);
@@ -702,12 +699,12 @@ a:hover {
   padding: 10px 20px;
   color: #000000;
   cursor: pointer;
+  transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
 }
 .portfolio-filter-button:hover {
   color: white;
   background-color: #2196f3;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-  transition: background-color var(--duration) var(--cubic), color var(--duration) var(--cubic), box-shadow var(--duration) var(--cubic);
 }
 .portfolio-list {
   display: flex;
